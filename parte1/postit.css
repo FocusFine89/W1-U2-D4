@@ -1,0 +1,54 @@
+/* generale */
+body {
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2em;
+}
+/* FINE GENERALE */
+
+/* post it */
+
+.post-it {
+  width: 300px;
+  min-height: 200px;
+  -webkit-box-shadow: 10px 10px 13px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 13px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 13px -3px rgba(0, 0, 0, 0.75);
+  margin-block: 3%;
+  margin-inline: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 500ms;
+}
+
+.post-it p {
+  margin-block: 5%;
+}
+
+.giallo {
+  background-color: rgb(248, 248, 113);
+  transform: rotate(-5deg);
+}
+
+.viola {
+  background-color: violet;
+  transform: rotate(-10deg);
+}
+
+.verde {
+  background-color: aquamarine;
+  transform: rotate(5deg);
+}
+
+.post-it:hover {
+  transform: scale(1.3);
+}
